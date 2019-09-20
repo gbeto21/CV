@@ -1,14 +1,48 @@
-//Sizes
-$min_al : 0px;
-$max_sm : 320px;
-$min_md : 480px;
-$min_lg : 1200px;
-$min_xl : 1440px;
+//Sizes (sc_sz_---_--)
+$sc_sz_min_al : 0px;
+$sc_sz_max_sm : 320px;
+$sc_sz_min_md : 480px;
+$sc_sz_min_lg : 1200px;
+$sc_sz_min_xl : 1440px;
 
-//Areas
-$header : "header";
-$panel : "panel";
-$main : "main";
+//Areas (ar_-----*)
+$ar_header : "header";
+$ar_panel : "panel";
+$ar_main : "main";
 
 //Headers
 $headers: h1 h2 h3 h4 h5 h6;
+
+//Fonts size (ft_--_--)
+//Large (ft_lg_--)
+$ft_lg_xl : 44px;
+$ft_lg_lg : 40px;
+$ft_lg_md : 36px;
+$ft_lg_sm : 30px;
+
+//Medium (ft_md_--)
+$ft_md_xl : 24px;
+$ft_md_lg : 22px;
+$ft_md_md : 20px;
+$ft_md_sm : 18px;
+
+//Small (ft_sm_--)
+$ft_sm_xl : 16px;
+$ft_sm_lg : 14px;
+$ft_sm_md : 12px;
+$ft_sm_sm : 10px;
+
+
+//Header Sizes (hd_--_---_--)
+//SM (hd_sm_---_--
+$hd_sm_ptc_hg: 70px;
+$hd_sm_ptc_wd: 70px;
+$hd_sm_ptc_br: 35px;
+
+
+/*Images sizes:
+25 - 25
+50 - 50
+
+
+*/

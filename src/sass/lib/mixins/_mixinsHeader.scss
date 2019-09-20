@@ -1,0 +1,25 @@
+
+@mixin setHeaderSM{
+
+    .photoContainer{
+        height: $hd_sm_ptc_hg;
+        width: $hd_sm_ptc_wd;
+        border-radius: $hd_sm_ptc_br;
+        // border: 1px dashed darkblue;
+        background-image: url('../../img/agb.jpg');
+    }
+
+    .header{
+        height: 150px;
+    }
+
+}
+
+@mixin setLayoutSM{
+    body{
+        grid-template: 150px auto / 100%;
+        grid-template-areas: "header"
+                         "panel"
+                         "main";
+    }
+}

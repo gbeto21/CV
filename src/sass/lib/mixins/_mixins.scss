@@ -1,0 +1,19 @@
+
+@mixin reset_headers{
+
+    @each $header in ($headers){
+        #{$header}{
+            @extend %resetElement;
+        }
+    }
+
+}
+
+@mixin setLayoutSM{
+    body{
+        grid-template: 150px auto / 100%;
+        grid-template-areas: "header"
+                         "panel"
+                         "main";
+    }
+}

@@ -1,5 +1,13 @@
 header{
-    background: $azul0; 
-    
+    background: $azul0;
     grid-area: header;
 }
+
+.header_container{
+    display: grid;
+}
+
+.photoContainer{
+    background-image: url('../../img/agb.jpg');
+}
+
