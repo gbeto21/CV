@@ -1,0 +1,40 @@
+@media screen and (min-width: $min_al) and (max-width: $max_sm){
+    // body{
+    //     background: bisque;
+    // }
+
+    .panel{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: $min_md){
+    // body{
+    //     background: brown;
+    // }
+    .panel{
+        display: block;
+    }
+}
+
+@media screen and (min-width: $min_lg){
+    // body{
+    //     background: coral;
+    // }
+    body{
+        grid-template: 250px auto / 30% 70%;
+        grid-template-areas: "header header"
+                             "panel main";
+    }
+
+    header{
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: $min_xl){
+    // body{
+    //     background: darkgoldenrod;
+    // }
+}
