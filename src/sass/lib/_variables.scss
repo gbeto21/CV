@@ -33,13 +33,29 @@ $ft_sm_md : 12px;
 $ft_sm_sm : 10px;
 
 
-//Header Sizes (hd_--_---_--)
-//SM (hd_sm_---_--
+/*#region HEADER*/
+
+/*#region Areas*/
+$ar_ptc : photoContainer;
+$ar_degree : degree;
+$ar_personalName : personalName; 
+
+/*#endregion*/
+
+/*#region small (hd_sm_---_--)*/ 
+
+/*#region photoContaier (hd_sm_ptc_--)*/ 
 $hd_sm_ptc_hg: 70px;
 $hd_sm_ptc_wd: 70px;
 $hd_sm_ptc_br: 35px;
+/*#endregion*/
+
+/*#endregion*/
 
 
+/*#endregion*/
+
+//Header
 /*Images sizes:
 25 - 25
 50 - 50

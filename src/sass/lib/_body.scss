@@ -1,8 +1,8 @@
 body{
     @extend %resetElement; 
-    display: grid;
-    grid-template: 150px auto / 100%;
-    grid-template-areas: "header"
-                         "panel"
-                         "main"
+    // display: grid;
+    // // grid-template: auto auto / 100%;
+    // grid-template-areas: "header"
+    //                      "panel"
+    //                      "main"
 }

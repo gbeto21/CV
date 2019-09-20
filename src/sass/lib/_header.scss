@@ -5,9 +5,23 @@ header{
 
 .header_container{
     display: grid;
+    grid-template: auto auto / 30% 70%;
+    grid-template-areas: "#{$ar_ptc} #{$ar_degree}"
+                         "#{$ar_ptc} #{$ar_personalName}";   
+}
+
+.degree{
+    grid-area: $ar_degree;
+}
+
+.personalName{
+    grid-area: $ar_personalName;
 }
 
 .photoContainer{
     background-image: url('../../img/agb.jpg');
+    grid-area: $ar_ptc;
+    align-self: center;
+    justify-self: center;
 }
 

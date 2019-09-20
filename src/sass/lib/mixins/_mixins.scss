@@ -11,7 +11,7 @@
 
 @mixin setLayoutSM{
     body{
-        grid-template: 150px auto / 100%;
+        grid-template: auto auto / 100%;
         grid-template-areas: "header"
                          "panel"
                          "main";
