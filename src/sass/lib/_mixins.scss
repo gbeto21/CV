@@ -1,0 +1,10 @@
+
+@mixin reset_headers{
+
+    @each $header in ($headers){
+        #{$header}{
+            @extend %resetElement;
+        }
+    }
+
+}

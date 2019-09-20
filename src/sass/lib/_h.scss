@@ -1,13 +1,1 @@
-$headers: h1 h2 h3 h4 h5 h6;
-
-@mixin reset_headers{
-
-    @each $header in ($headers){
-        #{$header}{
-            @extend %resetElement;
-        }
-    }
-
-}
-
 @include reset_headers;
