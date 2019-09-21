@@ -91,8 +91,15 @@ header {
   color: #559FBF;
   font-weight: bold; }
 
-.main_job--details {
+.main_section--details {
   color: #559FBF; }
+
+.main_link {
+  color: #559FBF;
+  text-decoration: none; }
+
+.main_link:hover {
+  text-decoration: underline; }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
   body {
@@ -114,14 +121,21 @@ header {
   .main_section {
     padding: 10px 5px; }
   .main_title--container {
-    display: inline-block; }
+    display: inline-block;
+    padding: 10px 5px; }
   .main_title--section {
     display: inline-block;
     font-size: 18px; }
   .main_job--title {
-    font-size: 14px; }
-  .main_job--details {
-    font-size: 14px; }
+    font-size: 14px;
+    padding: 1.5px 15px; }
+  .main_section--details {
+    font-size: 14px;
+    padding: 3px 20px; }
+  .main_link {
+    font-size: 14px;
+    display: block;
+    padding: 3px 20px; }
   .panel {
     display: none; }
   header {

@@ -2,8 +2,6 @@
     grid-area: main;
 }
 
-
-
 .main_title--container{
     display: inline-block;
     font-family: $ft_fm_tsec;
@@ -19,6 +17,15 @@
     font-weight: bold;
 }
 
-.main_job--details{
+.main_section--details{
     color: $azul0;
+}
+
+.main_link{
+    color: $azul0;
+    text-decoration: none;
+}
+
+.main_link:hover{
+    text-decoration: underline;
 }

@@ -7,19 +7,28 @@
 
     .main_title--container{
         display: inline-block;
+        padding: 10px 5px;
     }    
-
+    
     .main_title--section{
         display: inline-block;
         font-size: $ft_sm_lg;
     }
-
+    
     .main_job--title{
         font-size: $ft_sm_sm;
+        padding: 1.5px 15px;
     }
 
-    .main_job--details{
+    .main_section--details{
         font-size: $ft_sm_sm;
+        padding: 3px 20px;
+    }
+    
+    .main_link{
+        font-size: $ft_sm_sm;
+        display: block;
+        padding: 3px 20px;
     }
 
 }
