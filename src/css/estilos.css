@@ -23,9 +23,15 @@
 
 
 */
-body, h1, h2, h3, h4, h5, h6, p {
+body, h1, h2, h3, h4, h5, h6, hr, p {
   padding: 0px;
   margin: 0px; }
+
+hr {
+  background-color: #1D6F93;
+  height: 2px;
+  display: inline-block;
+  width: 100px; }
 
 header {
   background: #559FBF;
@@ -43,15 +49,16 @@ header {
   -ms-grid-column: 2;
   grid-area: degree;
   color: #B0DBEE;
-  font-size: 16px;
-  font-family: "ABeeZee", sans-serif; }
+  font-size: 22px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: bold; }
 
 .personalName {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: personalName;
   color: #B0DBEE;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Amiko", sans-serif;
   align-self: flex-end; }
 
@@ -70,8 +77,22 @@ header {
   border: 1px solid darksalmon; }
 
 .main {
-  border: 1px solid darkorange;
   grid-area: main; }
+
+.main_title--container {
+  display: inline-block;
+  font-family: "Heebo", sans-serif; }
+
+.main_title--section {
+  color: #1D6F93;
+  font-weight: bold; }
+
+.main_job--title {
+  color: #559FBF;
+  font-weight: bold; }
+
+.main_job--details {
+  color: #559FBF; }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
   body {
@@ -86,6 +107,21 @@ header {
     border-radius: 35px;
     border: 3px solid #B0DBEE;
     background-image: url("../../img/agb.jpg"); }
+  .degree {
+    font-size: 18px; }
+  .personalName {
+    font-size: 16px; }
+  .main_section {
+    padding: 10px 5px; }
+  .main_title--container {
+    display: inline-block; }
+  .main_title--section {
+    display: inline-block;
+    font-size: 18px; }
+  .main_job--title {
+    font-size: 14px; }
+  .main_job--details {
+    font-size: 14px; }
   .panel {
     display: none; }
   header {

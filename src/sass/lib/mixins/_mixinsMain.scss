@@ -1,0 +1,25 @@
+
+@mixin setMainSM{
+
+    .main_section{
+        padding: 10px 5px;
+    }
+
+    .main_title--container{
+        display: inline-block;
+    }    
+
+    .main_title--section{
+        display: inline-block;
+        font-size: $ft_sm_lg;
+    }
+
+    .main_job--title{
+        font-size: $ft_sm_sm;
+    }
+
+    .main_job--details{
+        font-size: $ft_sm_sm;
+    }
+
+}

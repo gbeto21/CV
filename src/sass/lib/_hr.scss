@@ -1,0 +1,7 @@
+hr{
+    @extend %resetElement;
+    background-color: $azul4;
+    height: 2px;
+    display: inline-block;
+    width: 100px;
+}

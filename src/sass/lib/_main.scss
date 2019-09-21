@@ -1,4 +1,24 @@
 .main{
-    border: 1px solid darkorange; 
     grid-area: main;
+}
+
+
+
+.main_title--container{
+    display: inline-block;
+    font-family: $ft_fm_tsec;
+}
+
+.main_title--section{
+    color: $azul4;
+    font-weight: bold;
+}
+
+.main_job--title{
+    color: $azul0;
+    font-weight: bold;
+}
+
+.main_job--details{
+    color: $azul0;
 }
