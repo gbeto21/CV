@@ -12,10 +12,17 @@ header{
 
 .degree{
     grid-area: $ar_degree;
+    color: $azul1;
+    font-size: $ft_sm_xl;
+    font-family: $ft_fm_degr;
 }
 
 .personalName{
     grid-area: $ar_personalName;
+    color: $azul1;
+    font-size: $ft_sm_md;
+    font-family: $ft_fm_pnam;
+    align-self: flex-end;
 }
 
 .photoContainer{

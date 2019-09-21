@@ -1,3 +1,14 @@
+/*#region FontFamily*/
+/*
+    font-family: 'ABeeZee', sans-serif;
+
+    font-family: 'Amiko', sans-serif;
+
+    font-family: 'Archivo Narrow', sans-serif;
+
+    font-family: 'Heebo', sans-serif;
+*/
+/*#endregion*/
 /*#region HEADER*/
 /*#region Areas*/
 /*#endregion*/
@@ -30,12 +41,19 @@ header {
 .degree {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: degree; }
+  grid-area: degree;
+  color: #B0DBEE;
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif; }
 
 .personalName {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: personalName; }
+  grid-area: personalName;
+  color: #B0DBEE;
+  font-size: 12px;
+  font-family: "Amiko", sans-serif;
+  align-self: flex-end; }
 
 .photoContainer {
   -ms-grid-row: 1;
@@ -60,6 +78,8 @@ header {
     -ms-grid-columns: 100%;
     grid-template: auto auto / 100%;
     grid-template-areas: "header" "panel" "main"; }
+  .header {
+    padding: 10px 0px; }
   .photoContainer {
     height: 70px;
     width: 70px;
