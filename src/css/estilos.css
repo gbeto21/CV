@@ -33,6 +33,22 @@ hr {
   display: inline-block;
   width: 100px; }
 
+.header_container--modal {
+  background: #559FBF;
+  grid-area: header;
+  opacity: .8;
+  display: none; }
+
+.active {
+  display: block; }
+
+.header_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+  grid-template: auto auto / 30% 70%;
+  grid-template-areas: "photoContainer degree" "photoContainer personalName"; }
+
 header {
   background: #559FBF;
   grid-area: header; }
@@ -47,6 +63,8 @@ header {
 .degree {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: degree;
   color: #B0DBEE;
   font-size: 22px;
@@ -56,6 +74,8 @@ header {
 .personalName {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: personalName;
   color: #B0DBEE;
   font-size: 16px;
@@ -63,6 +83,9 @@ header {
   align-self: flex-end; }
 
 .photoContainer {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -138,6 +161,9 @@ header {
     padding: 3px 20px; }
   .panel {
     display: none; }
+  .header_container--modal {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; }
   header {
     -ms-grid-row: 1;
     -ms-grid-column: 1; }
