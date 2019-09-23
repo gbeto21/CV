@@ -24,6 +24,7 @@ function validateSmallDevice(event) {
     else {
         photo.removeEventListener(eventClick, validateShowModal)
         buttonClose.removeEventListener(eventClick, hideModal)
+        showElements()
     }
 }
 
@@ -40,11 +41,18 @@ function hidePanel() {
     headerModal.style.display = none
 }
 
-function showPanel(){
+function showPanel() {
 
     main.style.display = none
     panel.style.display = block
     headerModal.style.display = block
+}
+
+function showElements() {
+    showingPanel = false
+    main.style.display = block
+    panel.style.display = block
+    headerModal.style.display = none
 }
 
 function validateShowModal() {
