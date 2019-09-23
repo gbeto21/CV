@@ -3,9 +3,7 @@
     @include setLayoutSM;//_mixins
     @include setHeaderSM;//_mixinsHeader
     @include setMainSM;//_mixinsMain
-    .panel{
-        display: none;
-    }
+    @include setPanelSM;//_mixinsPanel
 
 }
 

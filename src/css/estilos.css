@@ -27,27 +27,17 @@ body, h1, h2, h3, h4, h5, h6, hr, p {
   padding: 0px;
   margin: 0px; }
 
+.active {
+  display: block; }
+
+.inactive {
+  display: none; }
+
 hr {
   background-color: #1D6F93;
   height: 2px;
   display: inline-block;
   width: 100px; }
-
-.header_container--modal {
-  background: #559FBF;
-  grid-area: header;
-  opacity: .8;
-  display: none; }
-
-.active {
-  display: block; }
-
-.header_container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 30% 70%;
-  grid-template: auto auto / 30% 70%;
-  grid-template-areas: "photoContainer degree" "photoContainer personalName"; }
 
 header {
   background: #559FBF;
@@ -96,6 +86,19 @@ header {
   -ms-grid-column-align: center;
   justify-self: center; }
 
+.header_container--modal {
+  background: #559FBF;
+  grid-area: header;
+  opacity: .8;
+  display: none; }
+
+.header_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+  grid-template: auto auto / 30% 70%;
+  grid-template-areas: "photoContainer degree" "photoContainer personalName"; }
+
 .panel {
   border: 1px solid darksalmon; }
 
@@ -128,7 +131,7 @@ header {
   body {
     -ms-grid-columns: 100%;
     grid-template: auto auto / 100%;
-    grid-template-areas: "header" "panel" "main"; }
+    grid-template-areas: "header" "mainSmall"; }
   .header {
     padding: 10px 0px; }
   .photoContainer {
@@ -141,6 +144,8 @@ header {
     font-size: 18px; }
   .personalName {
     font-size: 16px; }
+  .main {
+    grid-area: visibleSection; }
   .main_section {
     padding: 10px 5px; }
   .main_title--container {
@@ -158,15 +163,17 @@ header {
   .main_link {
     font-size: 14px;
     display: block;
-    padding: 3px 20px; }
+    padding-left: 20px; }
   .panel {
-    display: none; }
-  .header_container--modal {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1; }
+    grid-area: mainSmall; }
   header {
     -ms-grid-row: 1;
     -ms-grid-column: 1; }
-  .main {
-    -ms-grid-row: 3;
+  .header_container--modal {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; } }
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  .panel {
+    -ms-grid-row: 2;
     -ms-grid-column: 1; } }

@@ -1,6 +1,10 @@
 
 @mixin setMainSM{
 
+    .main{
+        grid-area: visibleSection;
+    }
+
     .main_section{
         padding: 10px 5px;
     }
@@ -28,7 +32,7 @@
     .main_link{
         font-size: $ft_sm_sm;
         display: block;
-        padding: 3px 20px;
+        padding-left: 20px;
     }
 
 }
