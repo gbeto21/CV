@@ -8,6 +8,7 @@ const smallDevice = window.matchMedia('screen and (max-width: 320px) and (min-wi
 const eventClick = 'click'
 const none = 'none'
 const block = 'block'
+const blank = ''
 
 var showingPanel = false
 
@@ -50,9 +51,9 @@ function showPanel() {
 
 function showElements() {
     showingPanel = false
-    main.style.display = block
-    panel.style.display = block
-    headerModal.style.display = none
+    main.style.display = blank
+    panel.style.display = blank
+    headerModal.style.display = blank
 }
 
 function validateShowModal() {

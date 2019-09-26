@@ -27,12 +27,6 @@ body, h1, h2, h3, h4, h5, h6, hr, p {
   padding: 0px;
   margin: 0px; }
 
-.active {
-  display: block; }
-
-.inactive {
-  display: none; }
-
 hr {
   background-color: #1D6F93;
   height: 2px;
@@ -100,7 +94,9 @@ header {
   grid-template-areas: "photoContainer degree" "photoContainer personalName"; }
 
 .panel {
-  border: 1px solid darksalmon; }
+  grid-area: panel;
+  color: #1D6F93;
+  background-color: #B0DBEE; }
 
 .main {
   grid-area: main; }
