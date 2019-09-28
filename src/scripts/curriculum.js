@@ -1,14 +1,17 @@
 const photo = document.querySelector('#photoContainer');
 const headerModal = document.querySelector('#photoContainerModal');
+const header = document.querySelector('#header');
 const panel = document.querySelector("#panel")
 const main = document.querySelector("#main")
 const buttonClose = document.querySelector("#buttonClose")
 const smallDevice = window.matchMedia('screen and (max-width: 320px) and (min-width: 0px)')
 
+
 const eventClick = 'click'
 const none = 'none'
 const block = 'block'
 const blank = ''
+const flex = 'flex'
 
 var showingPanel = false
 
@@ -46,7 +49,8 @@ function showPanel() {
 
     main.style.display = none
     panel.style.display = block
-    headerModal.style.display = block
+    headerModal.style.display = flex
+
 }
 
 function showElements() {

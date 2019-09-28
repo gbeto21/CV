@@ -4,3 +4,45 @@
     background-color: $azul1;
 }
 
+.personalInformation_image{
+    display: flex;
+}
+
+.personalInformation_item{
+    margin-left: 10px;
+    display: flex;
+}
+
+.personalInformation_container{
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.personalInformation_container a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: $azul4;
+}
+
+.socialNetworks{
+    text-align: center;
+}
+
+.socialNetworks a{
+    text-decoration: none;
+}
+
+.languages{
+    display:flex;
+    margin-left: 10px;
+}
+
+.languages_container{
+    display:flex;
+    align-items: center;
+}
+
+.languages_languageTitle{
+    font-weight: bold;
+}

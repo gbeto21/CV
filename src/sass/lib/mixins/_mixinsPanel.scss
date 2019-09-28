@@ -3,6 +3,81 @@
 
     .panel{
         grid-area: mainSmall;
+        z-index: 3;
     }
 
+    .objective{
+        font-size: $ft_sm_lg;
+        padding: 10px 10px 0 10px; 
+        text-align: justify;
+    }
+
+    .personsalInformation{
+        display: block;
+    }
+
+    .personalInformation_container{
+        display: flex;
+    }
+
+    .personalInformation_image{
+        width: 30px;
+        height: 30px;
+    }
+
+    .personalInformation_location{
+        width: 25px;
+        height: 30px;
+    }
+
+    .personalInformation_email{
+        width: 30px;
+        height: 20px;
+    }
+
+    .socialNetworks{
+        margin-top: 15px;
+    }
+
+    .socialNetworks_image
+    {
+        width: 45px;
+        height: 45px;
+        margin: 5px 10px;
+    }
+
+    .socialNetworks p{
+        font-size: $ft_sm_xl; 
+    }
+
+    .languages{
+        margin-top: 15px;
+        display: block;
+    }
+
+    .languages_languageContainer{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+    }
+
+    .languages_languageContainer p
+    {
+        display: inline-block;
+        margin-left: 10px; 
+    }
+
+    .hobbies{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .hobbies_hobbie{
+        width: 45px;
+        height: 45px;
+        margin: 5px 10px;
+    }
+    
 }

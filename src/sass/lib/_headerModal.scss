@@ -1,14 +1,17 @@
-.header_container--modal{
-    background: $azul0;
+.header_container--modal{    
     grid-area: header;
-    opacity: .8;
     display: none;
+    z-index: 2;
+    position: absolute;
+    background: $azulSemiTransparente;
+    color: $azul4;
+    height: 21%;
+    width: 100%;
+    margin-top: -87px;
+    text-align: center;
 }
 
-.header_container{
-    display: grid;
-    grid-template: auto auto / 30% 70%;
-    grid-template-areas: "#{$ar_ptc} #{$ar_degree}"
-                         "#{$ar_ptc} #{$ar_personalName}";   
+.header_container--modal span{
+    margin-left: 92%;
+    margin-top: 4%;
 }
-

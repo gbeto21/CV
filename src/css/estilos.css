@@ -47,8 +47,6 @@ header {
 .degree {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: degree;
   color: #B0DBEE;
   font-size: 22px;
@@ -56,8 +54,6 @@ header {
   font-weight: bold; }
 
 .personalName {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: personalName;
@@ -70,33 +66,84 @@ header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  background-image: url("../../img/agb.jpg");
+  background-image: url("../../img/agb.png");
   grid-area: photoContainer;
   -ms-grid-row-align: center;
   align-self: center;
   -ms-grid-column-align: center;
   justify-self: center; }
 
-.header_container--modal {
-  background: #559FBF;
-  grid-area: header;
-  opacity: .8;
-  display: none; }
+.photoContainer img {
+  height: inherit;
+  width: inherit;
+  border-radius: inherit; }
 
-.header_container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 30% 70%;
-  grid-template: auto auto / 30% 70%;
-  grid-template-areas: "photoContainer degree" "photoContainer personalName"; }
+.header_container--modal {
+  grid-area: header;
+  display: none;
+  z-index: 2;
+  position: absolute;
+  background: rgba(85, 159, 191, 0.5);
+  color: #1D6F93;
+  height: 21%;
+  width: 100%;
+  margin-top: -87px;
+  text-align: center; }
+
+.header_container--modal span {
+  margin-left: 92%;
+  margin-top: 4%; }
 
 .panel {
   grid-area: panel;
   color: #1D6F93;
   background-color: #B0DBEE; }
+
+.personalInformation_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.personalInformation_item {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.personalInformation_container {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  margin-top: 10px; }
+
+.personalInformation_container a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #1D6F93; }
+
+.socialNetworks {
+  text-align: center; }
+
+.socialNetworks a {
+  text-decoration: none; }
+
+.languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px; }
+
+.languages_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.languages_languageTitle {
+  font-weight: bold; }
 
 .main {
   grid-area: main; }
@@ -134,8 +181,7 @@ header {
     height: 70px;
     width: 70px;
     border-radius: 35px;
-    border: 3px solid #B0DBEE;
-    background-image: url("../../img/agb.jpg"); }
+    border: 3px solid #B0DBEE; }
   .degree {
     font-size: 18px; }
   .personalName {
@@ -159,9 +205,63 @@ header {
   .main_link {
     font-size: 14px;
     display: block;
-    padding-left: 20px; }
+    padding-left: 20px;
+    margin-bottom: 5px; }
   .panel {
-    grid-area: mainSmall; }
+    grid-area: mainSmall;
+    z-index: 3; }
+  .objective {
+    font-size: 18px;
+    padding: 10px 10px 0 10px;
+    text-align: justify; }
+  .personsalInformation {
+    display: block; }
+  .personalInformation_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .personalInformation_image {
+    width: 30px;
+    height: 30px; }
+  .personalInformation_location {
+    width: 25px;
+    height: 30px; }
+  .personalInformation_email {
+    width: 30px;
+    height: 20px; }
+  .socialNetworks {
+    margin-top: 15px; }
+  .socialNetworks_image {
+    width: 45px;
+    height: 45px;
+    margin: 5px 10px; }
+  .socialNetworks p {
+    font-size: 22px; }
+  .languages {
+    margin-top: 15px;
+    display: block; }
+  .languages_languageContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 10px; }
+  .languages_languageContainer p {
+    display: inline-block;
+    margin-left: 10px; }
+  .hobbies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 20px; }
+  .hobbies_hobbie {
+    width: 45px;
+    height: 45px;
+    margin: 5px 10px; }
   header {
     -ms-grid-row: 1;
     -ms-grid-column: 1; }

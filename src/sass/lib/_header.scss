@@ -27,9 +27,14 @@ header{
 }
 
 .photoContainer{
-    background-image: url('../../img/agb.jpg');
+    background-image: url('../../img/agb.png');
     grid-area: $ar_ptc;
     align-self: center;
     justify-self: center;
 }
 
+.photoContainer img{
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
