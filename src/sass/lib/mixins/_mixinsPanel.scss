@@ -93,6 +93,10 @@
                              "#{$ar_pn_pin} #{$ar_pn_hbs}"
     }
 
+    .objective{
+        font-size: $ft_md_lg;
+    }
+
     .socialNetworks{
         display: flex;
         margin-top: 0;

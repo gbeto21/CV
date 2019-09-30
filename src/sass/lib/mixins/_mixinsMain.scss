@@ -10,7 +10,6 @@
     }
 
     .main_title--container{
-        // display: inline-block;
         padding: 10px 5px;
     }    
     
@@ -66,7 +65,8 @@
         font-size: $ft_md_lg;
     }
 
-    .main_section--details{
+    .main_section--details,
+    .main_link{
         font-size: $ft_md_md;
         text-align: justify;
         padding-left: 40px;

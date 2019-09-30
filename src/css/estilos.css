@@ -435,6 +435,8 @@ header {
     -ms-grid-columns: (50%)[2];
     grid-template: repeat(5, auto)/repeat(2, 50%);
     grid-template-areas: "objective objective" "personalInformation socialNetworks" "personalInformation languages" "personalInformation languages" "personalInformation hobbies"; }
+  .objective {
+    font-size: 4vw; }
   .socialNetworks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -497,7 +499,8 @@ header {
     padding-left: 15px; }
   .main_job--title {
     font-size: 4vw; }
-  .main_section--details {
+  .main_section--details,
+  .main_link {
     font-size: 3vw;
     text-align: justify;
     padding-left: 40px; }
