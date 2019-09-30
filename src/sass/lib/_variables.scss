@@ -1,11 +1,27 @@
 //Sizes (sc_sz_---_--)
 $sc_sz_min_al : 0px;
-$sc_sz_max_sm : 320px;
+$sc_sz_max_sm : 479px;
 $sc_sz_min_md : 480px;
 $sc_sz_min_lg : 1200px;
 $sc_sz_min_xl : 1440px;
 
+/*
+0-320: sm
+321-480: md
+481-1200: lg
+1200-1400: lg
+*/
+
+/*
+
+0320-0479: sm
+0480-1999: md
+1200-1399: lg
+1400-....: xl
+*/
+
 //Areas (ar_-----*)
+
 $ar_header : "header";
 $ar_panel : "panel";
 $ar_main : "main";
@@ -22,10 +38,10 @@ $ft_lg_md : 52px;
 $ft_lg_sm : 48px;
 
 //Medium (ft_md_--)
-$ft_md_xl : 44px;
-$ft_md_lg : 40px;
-$ft_md_md : 36px;
-$ft_md_sm : 32px;
+$ft_md_xl : 5vw;
+$ft_md_lg : 4vw;
+$ft_md_md : 3vw;
+$ft_md_sm : 2.5vw;
 
 //Small (ft_sm_--)
 $ft_sm_xl : 22px;
@@ -68,15 +84,56 @@ $hd_sm_ptc_br: 35px;
 $hd_sm_ptc_bd: 3px solid $azul1;
 /*#endregion*/
 
+/*#region photoContaier (hd_md_ptc_--)*/ 
+$hd_md_ptc_hg: 15vw;
+$hd_md_ptc_wd: 15vw;
+$hd_md_ptc_br: 8vw;
+// $hd_md_ptc_bd: 3px solid $azul1;
+/*#endregion*/
+
 /*#endregion*/
 
 
 /*#endregion*/
 
-//Header
-/*Images sizes:
-25 - 25
-50 - 50
+/*#region Panel*/
 
+/*#region Areas*/
 
-*/
+$ar_pn_obj: "objective";
+$ar_pn_pin: "personalInformation";
+$ar_pn_snt: "socialNetworks";
+$ar_pn_lng: "languages";
+$ar_pn_hbs: "hobbies";
+
+/*#endregion*/
+
+/*#region Personal Information*/
+
+$pn_md_pin_img_hg: 4vw;
+$pn_md_pin_img_wd: 4vw;
+$pn_md_pin_lct_hg: 4vw;
+$pn_md_pin_lct_wd: 3.5vw;
+$pn_md_pin_eml_hg: 3vw;
+$pn_md_pin_eml_wd: 4vw;
+/*#endregion*/
+
+/*#region SocialNetworks*/
+$pn_md_snt_img_hg: 5vw;
+$pn_md_snt_img_wd: 5vw;
+
+/*#endregion*/
+
+/*#region Languages*/
+$pn_md_lng_flg_hg: 3.5vw;
+$pn_md_lng_flg_wd: 5vw;
+
+/*#endregion*/
+
+/*#region Hobbies*/
+$pn_md_hbs_hbb_hg: 5vw;
+$pn_md_hbs_hbb_wd: 5vw;
+/*#endregion*/
+
+/*#endregion*/
+

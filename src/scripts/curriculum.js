@@ -4,7 +4,7 @@ const header = document.querySelector('#header');
 const panel = document.querySelector("#panel")
 const main = document.querySelector("#main")
 const buttonClose = document.querySelector("#buttonClose")
-const smallDevice = window.matchMedia('screen and (max-width: 320px) and (min-width: 0px)')
+const smallDevice = window.matchMedia('screen and (max-width: 479px) and (min-width: 0px)')
 
 
 const eventClick = 'click'

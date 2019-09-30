@@ -2,6 +2,15 @@
     grid-area: panel;
     color: $azul4;
     background-color: $azul1;
+    display:grid;
+}
+
+.objective{
+    grid-area: objective;
+}
+
+.personalInformation{
+    grid-area: personalInformation;
 }
 
 .personalInformation_image{
@@ -26,6 +35,7 @@
 }
 
 .socialNetworks{
+    grid-area: socialNetworks;
     text-align: center;
 }
 
@@ -34,6 +44,7 @@
 }
 
 .languages{
+    grid-area: languages;
     display:flex;
     margin-left: 10px;
 }
@@ -45,4 +56,8 @@
 
 .languages_languageTitle{
     font-weight: bold;
+}
+
+.hobbies{
+    grid-area: hobbies;
 }

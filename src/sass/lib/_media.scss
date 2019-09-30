@@ -9,6 +9,17 @@
 
 @media screen and (min-width: $sc_sz_min_md){
     
+    @include setLayoutSM;//_mixins
+    @include setHeaderSM;//_mixinsHeader
+    @include setMainSM;//_mixinsMain
+    @include setPanelSM;//_mixinsPanel
+
+}
+
+@media screen and (min-width: $sc_sz_min_md){
+    @include setLayoutMD;//_mixins
+    @include setHeaderMD;//_mixinsHeader
+    @include setPanelMD;//_mixinsPanel
 }
 
 @media screen and (min-width: $sc_sz_min_lg){

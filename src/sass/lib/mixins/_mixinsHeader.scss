@@ -10,14 +10,8 @@
         width: $hd_sm_ptc_wd;
         border-radius: $hd_sm_ptc_br;
         border: $hd_sm_ptc_bd;
-        // background: url('../../img/agb.jpg');
-
+        
     }
-
-    // .photoContainer:hover{
-    //     cursor: pointer;
-    //     border: 1px solid red;
-    // }
 
     .degree{
         font-size: $ft_sm_lg;
@@ -27,5 +21,29 @@
         font-size: $ft_sm_md;
     }
 
+
+}
+
+@mixin setHeaderMD {
+    
+    .header_container{
+        grid-template: auto auto / 20% 80%;
+    }
+
+    .photoContainer{
+        height: $hd_md_ptc_hg;
+        width: $hd_md_ptc_wd;
+        border-radius: $hd_md_ptc_br;
+        border: 0;
+    }    
+
+    .degree{
+        font-size: $ft_md_lg;
+    }
+
+    .personalName{
+        font-size: $ft_md_lg; 
+        align-self: flex-start;
+    }
 
 }

@@ -16,3 +16,12 @@
                          $ar_main_sm;
     }
 }
+
+@mixin setLayoutMD{
+    body{
+        grid-template: auto auto auto / 100%;
+        grid-template-areas: $ar_header
+                            $ar_panel
+                            $ar_main;
+    }
+}

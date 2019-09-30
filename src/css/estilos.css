@@ -1,3 +1,16 @@
+/*
+0-320: sm
+321-480: md
+481-1200: lg
+1200-1400: lg
+*/
+/*
+
+0320-0479: sm
+0480-1999: md
+1200-1399: lg
+1400-....: xl
+*/
 /*#region FontFamily*/
 /*
     font-family: 'ABeeZee', sans-serif;
@@ -15,14 +28,22 @@
 /*#region small (hd_sm_---_--)*/
 /*#region photoContaier (hd_sm_ptc_--)*/
 /*#endregion*/
+/*#region photoContaier (hd_md_ptc_--)*/
 /*#endregion*/
 /*#endregion*/
-/*Images sizes:
-25 - 25
-50 - 50
-
-
-*/
+/*#endregion*/
+/*#region Panel*/
+/*#region Areas*/
+/*#endregion*/
+/*#region Personal Information*/
+/*#endregion*/
+/*#region SocialNetworks*/
+/*#endregion*/
+/*#region Languages*/
+/*#endregion*/
+/*#region Hobbies*/
+/*#endregion*/
+/*#endregion*/
 body, h1, h2, h3, h4, h5, h6, hr, p {
   padding: 0px;
   margin: 0px; }
@@ -97,7 +118,15 @@ header {
 .panel {
   grid-area: panel;
   color: #1D6F93;
-  background-color: #B0DBEE; }
+  background-color: #B0DBEE;
+  display: -ms-grid;
+  display: grid; }
+
+.objective {
+  grid-area: objective; }
+
+.personalInformation {
+  grid-area: personalInformation; }
 
 .personalInformation_image {
   display: -webkit-box;
@@ -123,12 +152,14 @@ header {
   color: #1D6F93; }
 
 .socialNetworks {
+  grid-area: socialNetworks;
   text-align: center; }
 
 .socialNetworks a {
   text-decoration: none; }
 
 .languages {
+  grid-area: languages;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,6 +175,9 @@ header {
 
 .languages_languageTitle {
   font-weight: bold; }
+
+.hobbies {
+  grid-area: hobbies; }
 
 .main {
   grid-area: main; }
@@ -170,7 +204,7 @@ header {
 .main_link:hover {
   text-decoration: underline; }
 
-@media screen and (min-width: 0px) and (max-width: 320px) {
+@media screen and (min-width: 0px) and (max-width: 479px) {
   body {
     -ms-grid-columns: 100%;
     grid-template: auto auto / 100%;
@@ -269,7 +303,226 @@ header {
     -ms-grid-row: 1;
     -ms-grid-column: 1; } }
 
-@media screen and (min-width: 0px) and (max-width: 320px) {
+@media screen and (min-width: 480px) {
+  body {
+    -ms-grid-columns: 100%;
+    grid-template: auto auto / 100%;
+    grid-template-areas: "header" "mainSmall"; }
+  .header {
+    padding: 10px 0px; }
+  .photoContainer {
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    border: 3px solid #B0DBEE; }
+  .degree {
+    font-size: 18px; }
+  .personalName {
+    font-size: 16px; }
+  .main {
+    grid-area: visibleSection; }
+  .main_section {
+    padding: 10px 5px; }
+  .main_title--container {
+    display: inline-block;
+    padding: 10px 5px; }
+  .main_title--section {
+    display: inline-block;
+    font-size: 18px; }
+  .main_job--title {
+    font-size: 14px;
+    padding: 1.5px 15px; }
+  .main_section--details {
+    font-size: 14px;
+    padding: 3px 20px; }
+  .main_link {
+    font-size: 14px;
+    display: block;
+    padding-left: 20px;
+    margin-bottom: 5px; }
+  .panel {
+    grid-area: mainSmall;
+    z-index: 3; }
+  .objective {
+    font-size: 18px;
+    padding: 10px 10px 0 10px;
+    text-align: justify; }
+  .personsalInformation {
+    display: block; }
+  .personalInformation_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .personalInformation_image {
+    width: 30px;
+    height: 30px; }
+  .personalInformation_location {
+    width: 25px;
+    height: 30px; }
+  .personalInformation_email {
+    width: 30px;
+    height: 20px; }
+  .socialNetworks {
+    margin-top: 15px; }
+  .socialNetworks_image {
+    width: 45px;
+    height: 45px;
+    margin: 5px 10px; }
+  .socialNetworks p {
+    font-size: 22px; }
+  .languages {
+    margin-top: 15px;
+    display: block; }
+  .languages_languageContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 10px; }
+  .languages_languageContainer p {
+    display: inline-block;
+    margin-left: 10px; }
+  .hobbies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 20px; }
+  .hobbies_hobbie {
+    width: 45px;
+    height: 45px;
+    margin: 5px 10px; }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; }
+  .header_container--modal {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; }
+  .panel {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; } }
+
+@media screen and (min-width: 480px) {
+  body {
+    -ms-grid-columns: 100%;
+    grid-template: auto auto auto / 100%;
+    grid-template-areas: "header" "panel" "main"; }
+  .header_container {
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 20% 80%;
+    grid-template: auto auto / 20% 80%; }
+  .photoContainer {
+    height: 15vw;
+    width: 15vw;
+    border-radius: 8vw;
+    border: 0; }
+  .degree {
+    font-size: 4vw; }
+  .personalName {
+    font-size: 4vw;
+    -ms-flex-item-align: start;
+    align-self: flex-start; }
+  .panel {
+    grid-area: panel;
+    -ms-grid-columns: (50%)[2];
+    grid-template: repeat(5, auto)/repeat(2, 50%);
+    grid-template-areas: "objective objective" "personalInformation socialNetworks" "personalInformation languages" "personalInformation languages" "personalInformation hobbies"; }
+  .socialNetworks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0; }
+  .socialNetworks_image {
+    width: 5vw;
+    height: 5vw; }
+  .socialNetworks p {
+    font-size: 3vw;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
+  .personsalInformation {
+    grid-area: personalInformation; }
+  .personalInformation_image {
+    width: 4vw;
+    height: 4vw; }
+  .personalInformation_location {
+    width: 3.5vw;
+    height: 4vw; }
+  .personalInformation_email {
+    width: 4vw;
+    height: 3vw; }
+  .personalInformation_container {
+    font-size: 2.5vw; }
+  .languages {
+    margin-top: 5px; }
+  .languages_flag {
+    width: 5vw;
+    height: 3.5vw; }
+  .languages_languageContainer {
+    margin-bottom: 0; }
+  .languages_languageContainer p {
+    font-size: 2.5vw; }
+  .hobbies {
+    margin-top: 5px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .hobbies_hobbie {
+    width: 5vw;
+    height: 5vw;
+    margin-top: 0; }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; }
+  .header_container--modal {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; }
+  .panel {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  .objective {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .personalInformation {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1; }
+  .socialNetworks {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2; }
+  .languages {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2; }
+  .hobbies {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2; }
+  .main {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1; } }
+
+@media screen and (min-width: 480px) {
+  .personsalInformation {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1; } }
+
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .panel {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  .panel {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; } }
+
+@media screen and (min-width: 480px) {
+  .panel {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
   .panel {
     -ms-grid-row: 2;
     -ms-grid-column: 1; } }

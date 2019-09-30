@@ -81,3 +81,81 @@
     }
     
 }
+
+@mixin setPanelMD{
+    .panel{
+        grid-area: panel;
+        grid-template: repeat(5, auto) / repeat(2, 50%);
+        grid-template-areas: "#{$ar_pn_obj} #{$ar_pn_obj}"
+                             "#{$ar_pn_pin} #{$ar_pn_snt}"
+                             "#{$ar_pn_pin} #{$ar_pn_lng}"
+                             "#{$ar_pn_pin} #{$ar_pn_lng}"
+                             "#{$ar_pn_pin} #{$ar_pn_hbs}"
+    }
+
+    .socialNetworks{
+        display: flex;
+        margin-top: 0;
+    }
+
+    .socialNetworks_image{
+        width: $pn_md_snt_img_wd;
+        height: $pn_md_snt_img_hg;
+    }
+
+    .socialNetworks p{
+        font-size: $ft_md_md;
+        align-self: center;
+    }
+
+    .personsalInformation{
+        grid-area: personalInformation; 
+    }
+
+    .personalInformation_image{
+        width:$pn_md_pin_img_hg;
+        height: $pn_md_pin_img_wd;
+    }
+
+    .personalInformation_location{
+        width: $pn_md_pin_lct_wd;
+        height: $pn_md_pin_lct_hg;
+    }
+
+    .personalInformation_email{
+        width: $pn_md_pin_eml_wd;
+        height: $pn_md_pin_eml_hg;
+    }
+
+    .personalInformation_container{
+        font-size: $ft_md_sm;
+    }
+
+    .languages{
+        margin-top: 5px;
+    }
+
+    .languages_flag{
+        width: $pn_md_lng_flg_wd;
+        height: $pn_md_lng_flg_hg;
+    }
+
+    .languages_languageContainer {
+        margin-bottom: 0;
+    }
+
+    .languages_languageContainer p{
+        font-size: $ft_md_sm;
+    }
+
+    .hobbies{
+        margin-top: 5px;
+        justify-content: flex-start;
+    }
+
+    .hobbies_hobbie{
+        width: $pn_md_hbs_hbb_wd;
+        height: $pn_md_hbs_hbb_hg;
+        margin-top: 0;
+    }
+}
