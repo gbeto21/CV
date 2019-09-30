@@ -3,7 +3,8 @@
 }
 
 .main_title--container{
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     font-family: $ft_fm_tsec;
 }
 

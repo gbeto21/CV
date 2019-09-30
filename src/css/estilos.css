@@ -51,8 +51,10 @@ body, h1, h2, h3, h4, h5, h6, hr, p {
 hr {
   background-color: #1D6F93;
   height: 2px;
-  display: inline-block;
-  width: 100px; }
+  width: 60vw;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center; }
 
 header {
   background: #559FBF;
@@ -183,7 +185,12 @@ header {
   grid-area: main; }
 
 .main_title--container {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-family: "Heebo", sans-serif; }
 
 .main_title--section {
@@ -225,7 +232,6 @@ header {
   .main_section {
     padding: 10px 5px; }
   .main_title--container {
-    display: inline-block;
     padding: 10px 5px; }
   .main_title--section {
     display: inline-block;
@@ -324,7 +330,6 @@ header {
   .main_section {
     padding: 10px 5px; }
   .main_title--container {
-    display: inline-block;
     padding: 10px 5px; }
   .main_title--section {
     display: inline-block;
@@ -474,6 +479,28 @@ header {
     width: 5vw;
     height: 5vw;
     margin-top: 0; }
+  .main_section {
+    padding: 0; }
+  .main_title--section {
+    font-size: 5vw; }
+  .main_title--container {
+    padding: 0 0 0 10px; }
+  .main_title--container,
+  .main_job--titleContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .main_job--titleContainer {
+    padding-left: 15px; }
+  .main_job--title {
+    font-size: 4vw; }
+  .main_section--details {
+    font-size: 3vw;
+    text-align: justify;
+    padding-left: 40px; }
   header {
     -ms-grid-row: 1;
     -ms-grid-column: 1; }

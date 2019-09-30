@@ -10,7 +10,7 @@
     }
 
     .main_title--container{
-        display: inline-block;
+        // display: inline-block;
         padding: 10px 5px;
     }    
     
@@ -36,4 +36,40 @@
         margin-bottom: 5px;
     }
 
+}
+
+@mixin setMainMD{
+    
+    .main_section{
+        padding:0;
+    }
+
+    .main_title--section{
+        font-size: $ft_md_xl;
+    }
+
+    .main_title--container{
+        padding: 0 0 0 10px;
+    }
+
+    .main_title--container, 
+    .main_job--titleContainer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main_job--titleContainer{
+        padding-left: 15px;
+    }
+
+    .main_job--title{
+        font-size: $ft_md_lg;
+    }
+
+    .main_section--details{
+        font-size: $ft_md_md;
+        text-align: justify;
+        padding-left: 40px;
+    }    
+    
 }
