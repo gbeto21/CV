@@ -556,3 +556,28 @@ header {
   .panel {
     -ms-grid-row: 2;
     -ms-grid-column: 1; } }
+
+@media screen and (min-width: 1200px) {
+  body {
+    -ms-grid-columns: 25% 75%;
+    grid-template: repeat(2, auto)/25% 75%;
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas: "header header" "panel main"; }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .header_container--modal {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .panel {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  .main {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2; }
+  .panel {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; } }

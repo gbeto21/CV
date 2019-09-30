@@ -24,8 +24,8 @@
 }
 
 @media screen and (min-width: $sc_sz_min_lg){
+    @include setLayoutLG; //_mixins
     
-
 }
 
 @media screen and (min-width: $sc_sz_min_xl){

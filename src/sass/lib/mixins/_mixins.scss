@@ -25,3 +25,13 @@
                             $ar_main;
     }
 }
+
+@mixin setLayoutLG{
+    body{
+        grid-template: repeat(2, auto) / 25% 75%;
+        display: grid;
+        grid-template-areas: "#{$ar_header} #{$ar_header}"
+                             "#{$ar_panel} #{$ar_main}";
+    }
+    
+}
