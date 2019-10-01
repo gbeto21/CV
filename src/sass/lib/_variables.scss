@@ -32,10 +32,10 @@ $headers: h1 h2 h3 h4 h5 h6;
 
 //Fonts size (ft_--_--)
 //Large (ft_lg_--)
-$ft_lg_xl : 60px;
-$ft_lg_lg : 56px;
-$ft_lg_md : 52px;
-$ft_lg_sm : 48px;
+$ft_lg_xl : 3vw;
+$ft_lg_lg : 2.5vw;
+$ft_lg_md : 2vw;
+$ft_lg_sm : 1.5vw;
 
 //Medium (ft_md_--)
 $ft_md_xl : 5vw;
@@ -88,6 +88,13 @@ $hd_sm_ptc_bd: 3px solid $azul1;
 $hd_md_ptc_hg: 15vw;
 $hd_md_ptc_wd: 15vw;
 $hd_md_ptc_br: 8vw;
+// $hd_md_ptc_bd: 3px solid $azul1;
+/*#endregion*/
+
+/*#region photoContaier (hd_lg_ptc_--)*/ 
+$hd_lg_ptc_hg: 7vw;
+$hd_lg_ptc_wd: 7vw;
+$hd_lg_ptc_br: 5vw;
 // $hd_md_ptc_bd: 3px solid $azul1;
 /*#endregion*/
 

@@ -10,7 +10,6 @@
         width: $hd_sm_ptc_wd;
         border-radius: $hd_sm_ptc_br;
         border: $hd_sm_ptc_bd;
-        
     }
 
     .degree{
@@ -20,8 +19,6 @@
     .personalName{
         font-size: $ft_sm_md;
     }
-
-
 }
 
 @mixin setHeaderMD {
@@ -46,4 +43,26 @@
         align-self: flex-start;
     }
 
+}
+
+@mixin setHeaderLG{
+
+    .header_container{
+        grid-template: auto auto / 10% 90%;
+    }
+
+    .photoContainer{
+        height: $hd_lg_ptc_hg;
+        width: $hd_lg_ptc_wd;
+        border-radius: $hd_lg_ptc_br;
+        border: 0;
+    }
+
+    .degree{
+        font-size: $ft_lg_lg;
+    }
+
+    .personalName{
+        font-size: $ft_lg_md; 
+    }
 }
