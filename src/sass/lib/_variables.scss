@@ -35,7 +35,7 @@ $headers: h1 h2 h3 h4 h5 h6;
 $ft_lg_xl : 3vw;
 $ft_lg_lg : 2.5vw;
 $ft_lg_md : 2vw;
-$ft_lg_sm : 1.5vw;
+$ft_lg_sm : 1.32vw;
 
 //Medium (ft_md_--)
 $ft_md_xl : 5vw;
@@ -88,7 +88,6 @@ $hd_sm_ptc_bd: 3px solid $azul1;
 $hd_md_ptc_hg: 15vw;
 $hd_md_ptc_wd: 15vw;
 $hd_md_ptc_br: 8vw;
-// $hd_md_ptc_bd: 3px solid $azul1;
 /*#endregion*/
 
 /*#region photoContaier (hd_lg_ptc_--)*/ 
@@ -117,17 +116,34 @@ $ar_pn_hbs: "hobbies";
 
 /*#region Personal Information*/
 
+/*#region MD*/
 $pn_md_pin_img_hg: 4vw;
 $pn_md_pin_img_wd: 4vw;
 $pn_md_pin_lct_hg: 4vw;
 $pn_md_pin_lct_wd: 3.5vw;
 $pn_md_pin_eml_hg: 3vw;
 $pn_md_pin_eml_wd: 4vw;
+
+/*#endregion*/
+
+/*#region LG*/
+$pn_lg_pin_img_hg: 1.7vw;
+$pn_lg_pin_img_wd: 1.7vw;
+$pn_lg_pin_lct_hg: 1.5vw;
+$pn_lg_pin_lct_wd: 1.7vw;
+$pn_lg_pin_eml_hg: 1.2vw;
+$pn_lg_pin_eml_wd: 1.7vw;
+
+/*#endregion*/
+
 /*#endregion*/
 
 /*#region SocialNetworks*/
 $pn_md_snt_img_hg: 5vw;
 $pn_md_snt_img_wd: 5vw;
+
+$pn_lg_snt_img_hg: 3vw;
+$pn_lg_snt_img_wd: 3vw;
 
 /*#endregion*/
 

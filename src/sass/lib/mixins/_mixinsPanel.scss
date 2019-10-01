@@ -163,3 +163,54 @@
         margin-top: 0;
     }
 }
+
+@mixin setPanelLG{
+    .panel{
+        display: block;
+    }
+
+    .objective{
+        font-size: $ft_lg_sm;
+        padding: 15px 15px 0 15px;
+    }
+
+    .personalInformation{
+        display: block;
+    }
+
+    .personalInformation_image{
+        width:$pn_lg_pin_img_hg;
+        height: $pn_lg_pin_img_wd;
+    }
+
+    .personalInformation_location{
+        width: $pn_lg_pin_lct_wd;
+        height: $pn_lg_pin_lct_hg;
+    }
+
+    .personalInformation_email{
+        width: $pn_lg_pin_eml_wd;
+        height: $pn_lg_pin_eml_hg;
+    }
+
+    .personalInformation_container{
+        font-size: $ft_lg_sm;   
+    }
+
+    .socialNetworks{
+        margin-top: 15px;
+        display: block;
+        text-align: center;
+    }
+
+    .socialNetworks_image{
+        width: $pn_lg_snt_img_wd;
+        height: $pn_lg_snt_img_hg;
+    }
+
+    .socialNetworks p{
+        display: block;
+        font-size: $ft_lg_md;
+        text-align: center;
+    }
+}

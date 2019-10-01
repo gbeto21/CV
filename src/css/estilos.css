@@ -38,6 +38,10 @@
 /*#region Areas*/
 /*#endregion*/
 /*#region Personal Information*/
+/*#region MD*/
+/*#endregion*/
+/*#region LG*/
+/*#endregion*/
 /*#endregion*/
 /*#region SocialNetworks*/
 /*#endregion*/
@@ -579,6 +583,35 @@ header {
     font-size: 2.5vw; }
   .personalName {
     font-size: 2vw; }
+  .panel {
+    display: block; }
+  .objective {
+    font-size: 1.32vw;
+    padding: 15px 15px 0 15px; }
+  .personalInformation {
+    display: block; }
+  .personalInformation_image {
+    width: 1.7vw;
+    height: 1.7vw; }
+  .personalInformation_location {
+    width: 1.7vw;
+    height: 1.5vw; }
+  .personalInformation_email {
+    width: 1.7vw;
+    height: 1.2vw; }
+  .personalInformation_container {
+    font-size: 1.32vw; }
+  .socialNetworks {
+    margin-top: 15px;
+    display: block;
+    text-align: center; }
+  .socialNetworks_image {
+    width: 3vw;
+    height: 3vw; }
+  .socialNetworks p {
+    display: block;
+    font-size: 2vw;
+    text-align: center; }
   header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
