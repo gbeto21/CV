@@ -443,9 +443,10 @@ header {
     grid-area: panel;
     -ms-grid-columns: (50%)[2];
     grid-template: repeat(5, auto)/repeat(2, 50%);
-    grid-template-areas: "objective objective" "personalInformation socialNetworks" "personalInformation languages" "personalInformation languages" "personalInformation hobbies"; }
+    grid-template-areas: "objective objective" "personalInformation socialNetworks" "personalInformation languages" "personalInformation languages" "personalInformation hobbies";
+    padding-bottom: 10px; }
   .objective {
-    font-size: 4vw; }
+    font-size: 3vw; }
   .socialNetworks {
     display: -webkit-box;
     display: -ms-flexbox;

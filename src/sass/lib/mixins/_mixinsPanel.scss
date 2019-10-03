@@ -90,11 +90,12 @@
                              "#{$ar_pn_pin} #{$ar_pn_snt}"
                              "#{$ar_pn_pin} #{$ar_pn_lng}"
                              "#{$ar_pn_pin} #{$ar_pn_lng}"
-                             "#{$ar_pn_pin} #{$ar_pn_hbs}"
+                             "#{$ar_pn_pin} #{$ar_pn_hbs}";
+        padding-bottom: 10px;
     }
 
     .objective{
-        font-size: $ft_md_lg;
+        font-size: $ft_md_md;
     }
 
     .socialNetworks{
