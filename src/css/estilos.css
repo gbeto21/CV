@@ -429,8 +429,8 @@ header {
     -ms-grid-columns: 20% 80%;
     grid-template: auto auto / 20% 80%; }
   .photoContainer {
-    height: 15vw;
-    width: 15vw;
+    height: 12vw;
+    width: 12vw;
     border-radius: 8vw;
     border: 0; }
   .degree {
