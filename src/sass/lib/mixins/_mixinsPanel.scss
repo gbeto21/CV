@@ -213,4 +213,34 @@
         font-size: $ft_lg_md;
         text-align: center;
     }
+
+    .languages{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .languages_flag{
+        width: $pn_lg_lng_flg_wd;
+        height: $pn_lg_lng_flg_hg;
+    }
+
+    .languages_languageContainer{
+        margin-bottom: 15px;
+    }
+
+    .languages_languageContainer p{
+        font-size: $ft_lg_sm;
+    }
+
+    .hobbies{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 25px;
+    }
+
+    .hobbies_hobbie{
+        width: $pn_lg_hbs_hbb_wd;
+        height: $pn_lg_hbs_hbb_hg;
+    }
+
 }
