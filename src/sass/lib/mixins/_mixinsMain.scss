@@ -73,3 +73,22 @@
     }    
     
 }
+
+@mixin setMainLG{
+    .main{
+        grid-area: main;
+    }
+
+    .main_title--section{
+        font-size: $ft_lg_xl;
+    }
+
+    .main_job--title{
+        font-size: $ft_lg_lg;
+    }
+
+    .main_section--details,
+    .main_link{
+        font-size: $ft_lg_md;
+    }
+}

@@ -27,6 +27,7 @@
     @include setLayoutLG; //_mixins
     @include setHeaderLG; //_mixinsHeader
     @include setPanelLG; //_mixinsPanel
+    @include setMainLG; //_mixinsMain
 }
 
 @media screen and (min-width: $sc_sz_min_xl){
