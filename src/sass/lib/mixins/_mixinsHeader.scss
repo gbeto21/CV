@@ -49,6 +49,8 @@
 
     .header_container{
         grid-template: auto auto / 10% 90%;
+        grid-template-areas: "#{$ar_ptc} #{$ar_degree}"
+                             "#{$ar_ptc} #{$ar_personalName}"
     }
 
     .photoContainer{
