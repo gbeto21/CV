@@ -426,9 +426,9 @@ header {
     grid-template: auto auto auto / 100%;
     grid-template-areas: "header" "panel" "main"; }
   .header_container {
-    -ms-grid-rows: auto auto;
     -ms-grid-columns: 20% 80%;
-    grid-template: auto auto / 20% 80%; }
+    grid-template: auto auto / 20% 80%;
+    grid-template-areas: "photoContainer degree" "photoContainer personalName"; }
   .photoContainer {
     height: 12vw;
     width: 12vw;
@@ -517,6 +517,16 @@ header {
     padding-left: 40px; }
   header {
     -ms-grid-row: 1;
+    -ms-grid-column: 1; }
+  .degree {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2; }
+  .personalName {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2; }
+  .photoContainer {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     -ms-grid-column: 1; }
   .header_container--modal {
     -ms-grid-row: 1;
